@@ -1,3 +1,10 @@
+### [1.0.4](https://github.com/CyanSalt/eslint-config-preset/compare/v1.0.3...v1.0.4) (2021-12-23)
+
+
+### Bug Fixes
+
+* error in non exported package.json ([4ab2017](https://github.com/CyanSalt/eslint-config-preset/commit/4ab2017cffd8f45fc4fbec6058670a3d41bea6f2))
+
 ### [1.0.3](https://github.com/CyanSalt/eslint-config-preset/compare/v1.0.2...v1.0.3) (2021-12-23)
 
 
