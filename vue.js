@@ -11,7 +11,7 @@ if (hasInstalledPackage('vue', '>=3.x')) {
 }
 
 if (hasInstalledPackage('typescript')) {
-  presets.push('@cyansalt/eslint-config/typescript')
+  presets.push('@cyansalt/eslint-config/vue/typescript')
 }
 
 module.exports = {
