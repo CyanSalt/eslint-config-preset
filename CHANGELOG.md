@@ -1,3 +1,10 @@
+### [1.0.2](https://github.com/CyanSalt/eslint-config-preset/compare/v1.0.1...v1.0.2) (2021-12-23)
+
+
+### Bug Fixes
+
+* file path error ([d0c519d](https://github.com/CyanSalt/eslint-config-preset/commit/d0c519d236d4ee7449648d16c0420b8b9aaf82ae))
+
 ### [1.0.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.0.0...v1.0.1) (2021-12-23)
 
 
