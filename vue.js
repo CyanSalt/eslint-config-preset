@@ -1,4 +1,4 @@
-const { hasInstalledPackage } = require('../utils')
+const { hasInstalledPackage } = require('./utils')
 
 const presets = []
 
