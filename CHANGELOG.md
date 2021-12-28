@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.0.7...v1.1.0) (2021-12-28)
+
+
+### Features
+
+* support checkJs is exactly false ([7b34c9f](https://github.com/CyanSalt/eslint-config-preset/commit/7b34c9f11966522df87b7a5f50e1ca789373256f))
+
 ### [1.0.7](https://github.com/CyanSalt/eslint-config-preset/compare/v1.0.6...v1.0.7) (2021-12-23)
 
 
