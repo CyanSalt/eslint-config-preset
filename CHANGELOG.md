@@ -1,3 +1,10 @@
+### [1.1.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.1.0...v1.1.1) (2021-12-28)
+
+
+### Bug Fixes
+
+* tsconfig path ([9a1e4b0](https://github.com/CyanSalt/eslint-config-preset/commit/9a1e4b07a2e439807fcb3d584bba4f82f8bab98a))
+
 ## [1.1.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.0.7...v1.1.0) (2021-12-28)
 
 
