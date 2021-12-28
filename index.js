@@ -1,3 +1,4 @@
+const { getTSCompilerOptions } = require('./ts-utils')
 const { hasInstalledPackage } = require('./utils')
 
 const presets = [
@@ -8,7 +9,13 @@ const presets = [
 ]
 
 if (hasInstalledPackage('typescript')) {
-  presets.push('@cyansalt/eslint-config/typescript')
+  const compilerOptions = getTSCompilerOptions()
+  // Enable partially only when declared as `false` explicitly
+  if (compilerOptions && compilerOptions.checkJs === false) {
+    presets.push('@cyansalt/eslint-config/typescript/partial')
+  } else {
+    presets.push('@cyansalt/eslint-config/typescript')
+  }
 }
 
 if (hasInstalledPackage('@babel/eslint-parser')) {

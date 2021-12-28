@@ -2,18 +2,19 @@ const { Legacy } = require('@eslint/eslintrc')
 const findUp = require('find-up')
 const semver = require('semver')
 
+function getNearestPackageJson() {
+  const nearestConfigFile = Legacy.ConfigArrayFactory.getPathToConfigFileInDirectory(process.cwd())
+  if (!nearestConfigFile) return undefined
+  return findUp.sync('package.json', { cwd: nearestConfigFile })
+}
+
 let cachedDeps
 
 function getAllDependencies() {
   if (cachedDeps) {
     return cachedDeps
   }
-  const nearestConfigFile = Legacy.ConfigArrayFactory.getPathToConfigFileInDirectory(process.cwd())
-  if (!nearestConfigFile) {
-    cachedDeps = []
-    return cachedDeps
-  }
-  const nearestPackageJson = findUp.sync('package.json', { cwd: nearestConfigFile })
+  const nearestPackageJson = getNearestPackageJson()
   if (!nearestPackageJson) {
     cachedDeps = []
     return cachedDeps
@@ -64,6 +65,7 @@ function hasInstalledPackage(moduleId, version) {
 }
 
 module.exports = {
+  getNearestPackageJson,
   getInstalledPackageVersion,
   hasInstalledPackage,
 }

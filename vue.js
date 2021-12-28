@@ -1,3 +1,4 @@
+const { getTSCompilerOptions } = require('./ts-utils')
 const { hasInstalledPackage } = require('./utils')
 
 const presets = []
@@ -11,7 +12,13 @@ if (hasInstalledPackage('vue', '>=3.x')) {
 }
 
 if (hasInstalledPackage('typescript')) {
-  presets.push('@cyansalt/eslint-config/vue/typescript')
+  const compilerOptions = getTSCompilerOptions()
+  // Enable partially only when declared as `false` explicitly
+  if (compilerOptions && compilerOptions.checkJs === false) {
+    presets.push('@cyansalt/eslint-config/vue/typescript/partial')
+  } else {
+    presets.push('@cyansalt/eslint-config/vue/typescript')
+  }
 }
 
 module.exports = {
