@@ -5,7 +5,6 @@ const presets = [
   '@cyansalt',
   '@cyansalt/eslint-config/import',
   '@cyansalt/eslint-config/unicorn',
-  '@cyansalt/eslint-config/galaxy',
 ]
 
 if (hasInstalledPackage('typescript')) {
@@ -29,6 +28,12 @@ if (hasInstalledPackage('react')) {
 if (hasInstalledPackage('vue')) {
   presets.push(require.resolve('./vue.js'))
 }
+
+if (hasInstalledPackage('@vue/cli-service')) {
+  presets.push('@cyansalt/eslint-config/import/vue-cli')
+}
+
+presets.push(require.resolve('./galaxy.js'))
 
 module.exports = {
   extends: presets,
