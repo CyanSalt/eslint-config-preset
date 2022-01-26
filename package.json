@@ -1,6 +1,6 @@
 {
   "name": "@cyansalt/eslint-config-preset",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "My ESLint configuration preset",
   "main": "index.js",
   "publishConfig": {
