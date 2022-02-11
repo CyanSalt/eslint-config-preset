@@ -1,3 +1,10 @@
+### [1.3.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.3.0...v1.3.1) (2022-02-11)
+
+
+### Bug Fixes
+
+* update `eslint-plugin-galaxy` ([372ec2a](https://github.com/CyanSalt/eslint-config-preset/commit/372ec2aec1486b6a5ec39dc0e19a93e02e187510))
+
 ## [1.3.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.2.6...v1.3.0) (2022-02-07)
 
 
