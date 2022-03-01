@@ -1,3 +1,10 @@
+### [1.4.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.4.0...v1.4.1) (2022-03-01)
+
+
+### Bug Fixes
+
+* update config ([2d61d65](https://github.com/CyanSalt/eslint-config-preset/commit/2d61d65b33e9419b4d19608bbee144e344610122))
+
 ## [1.4.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.3.1...v1.4.0) (2022-03-01)
 
 
