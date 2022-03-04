@@ -9,6 +9,9 @@ if (hasInstalledPackage('vue', '>=3.x')) {
 } else {
   presets.unshift('@cyansalt/eslint-config/vue/v2')
   presets.push('@cyansalt/eslint-config/vue/scoped-css/v2')
+  if (hasInstalledPackage('unplugin-vue2-script-setup')) {
+    presets.push('@cyansalt/eslint-config/vue/script-setup')
+  }
 }
 
 if (hasInstalledPackage('typescript')) {
