@@ -1,3 +1,11 @@
+### [1.4.2](https://github.com/CyanSalt/eslint-config-preset/compare/v1.4.1...v1.4.2) (2022-03-11)
+
+
+### Bug Fixes
+
+* support unplugin-vue2-script-setup ([25c9fcd](https://github.com/CyanSalt/eslint-config-preset/commit/25c9fcdd04edeaae85d29c99f222d5f494237781))
+* update config ([8a68a9e](https://github.com/CyanSalt/eslint-config-preset/commit/8a68a9ecfc5596d68dc9c8c287ff283fe6b06a97))
+
 ### [1.4.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.4.0...v1.4.1) (2022-03-01)
 
 
