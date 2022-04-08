@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.4.3...v1.5.0) (2022-04-08)
+
+
+### Features
+
+* bump deps ([09cade7](https://github.com/CyanSalt/eslint-config-preset/commit/09cade73b26bca8b235596d0183316f613d4945c))
+
 ### [1.4.3](https://github.com/CyanSalt/eslint-config-preset/compare/v1.4.2...v1.4.3) (2022-03-11)
 
 
