@@ -1,3 +1,10 @@
+### [1.5.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.5.0...v1.5.1) (2022-04-14)
+
+
+### Bug Fixes
+
+* detect vue script setup ([105a602](https://github.com/CyanSalt/eslint-config-preset/commit/105a60289e951ba237b24072a1604765cfe8ded8))
+
 ## [1.5.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.4.3...v1.5.0) (2022-04-08)
 
 
