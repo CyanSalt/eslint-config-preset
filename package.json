@@ -25,23 +25,23 @@
   "author": "CyanSalt",
   "license": "ISC",
   "devDependencies": {
-    "@release-it/conventional-changelog": "^3.3.0",
-    "release-it": "^14.11.8"
+    "@release-it/conventional-changelog": "^5.0.0",
+    "release-it": "^15.0.0"
   },
   "dependencies": {
     "@babel/eslint-plugin": "^7.17.7",
-    "@cyansalt/eslint-config": "^3.8.0",
+    "@cyansalt/eslint-config": "^3.9.0",
     "@eslint/eslintrc": "^1.2.1",
-    "@typescript-eslint/eslint-plugin": "^5.18.0",
-    "@typescript-eslint/parser": "^5.18.0",
-    "eslint": "^8.12.0",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.15.0",
     "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-galaxy": "^1.13.0",
+    "eslint-plugin-galaxy": "^1.14.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.4.0",
-    "eslint-plugin-unicorn": "^41.0.1",
-    "eslint-plugin-vue": "^8.6.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "eslint-plugin-vue": "^8.7.1",
     "eslint-plugin-vue-scoped-css": "^2.2.0",
     "find-up": "^5.0.0",
     "semver": "^7.3.5"
