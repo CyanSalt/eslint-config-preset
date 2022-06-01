@@ -1,5 +1,12 @@
 
 
+## [1.7.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.6.2...v1.7.0) (2022-06-01)
+
+
+### Features
+
+* upgrade to eslint-plugin-vue@9 ([1e3d8d4](https://github.com/CyanSalt/eslint-config-preset/commit/1e3d8d41b1c92f547b03e3707ba039a8e269801c))
+
 ### [1.6.2](https://github.com/CyanSalt/eslint-config-preset/compare/v1.6.1...v1.6.2) (2022-05-26)
 
 
