@@ -1,5 +1,12 @@
 
 
+### [1.7.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.7.0...v1.7.1) (2022-06-23)
+
+
+### Bug Fixes
+
+* detect babel config files ([0f9e645](https://github.com/CyanSalt/eslint-config-preset/commit/0f9e6450f3abe4a61377cca8f42f077cc7a72e7b))
+
 ## [1.7.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.6.2...v1.7.0) (2022-06-01)
 
 
