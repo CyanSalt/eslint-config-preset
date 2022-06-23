@@ -29,8 +29,9 @@
     "release-it": "^15.0.0"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.18.2",
     "@babel/eslint-plugin": "^7.17.7",
-    "@cyansalt/eslint-config": "^3.11.0",
+    "@cyansalt/eslint-config": "^3.11.1",
     "@eslint/eslintrc": "^1.2.1",
     "@typescript-eslint/eslint-plugin": "~5.26.0",
     "@typescript-eslint/parser": "~5.26.0",
@@ -45,5 +46,17 @@
     "eslint-plugin-vue-scoped-css": "^2.2.0",
     "find-up": "^5.0.0",
     "semver": "^7.3.5"
+  },
+  "peerDependencies": {
+    "@babel/core": ">=7.11.0",
+    "typescript": ">=2.9.0"
+  },
+  "peerDependenciesMeta": {
+    "@babel/core": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
   }
 }

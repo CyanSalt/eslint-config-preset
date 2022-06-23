@@ -1,3 +1,4 @@
+const { hasBabelConfigFile } = require('./babel-utils')
 const { getTSCompilerOptions } = require('./ts-utils')
 const { hasInstalledPackage } = require('./utils')
 
@@ -17,7 +18,7 @@ if (hasInstalledPackage('typescript')) {
   }
 }
 
-if (hasInstalledPackage('@babel/eslint-parser')) {
+if (hasBabelConfigFile()) {
   presets.push('@cyansalt/eslint-config/babel')
 }
 

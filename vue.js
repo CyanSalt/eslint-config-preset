@@ -1,3 +1,4 @@
+const { hasBabelConfigFile } = require('./babel-utils')
 const { getTSCompilerOptions } = require('./ts-utils')
 const { hasInstalledPackage } = require('./utils')
 
@@ -14,13 +15,24 @@ if (hasInstalledPackage('vue', '>=3.x')) {
   }
 }
 
+let isPartiallyUsingTS = false
+
 if (hasInstalledPackage('typescript')) {
   const compilerOptions = getTSCompilerOptions()
   // Enable partially only when declared as `false` explicitly
   if (compilerOptions && compilerOptions.checkJs === false) {
+    isPartiallyUsingTS = true
     presets.push('@cyansalt/eslint-config/vue/typescript/partial')
   } else {
     presets.push('@cyansalt/eslint-config/vue/typescript')
+  }
+}
+
+if (hasBabelConfigFile()) {
+  if (isPartiallyUsingTS) {
+    presets.push('@cyansalt/eslint-config/vue/babel/partial')
+  } else {
+    presets.push('@cyansalt/eslint-config/vue/babel')
   }
 }
 
