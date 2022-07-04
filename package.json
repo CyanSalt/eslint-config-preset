@@ -45,7 +45,8 @@
     "eslint-plugin-vue": "^9.0.1",
     "eslint-plugin-vue-scoped-css": "^2.2.0",
     "find-up": "^5.0.0",
-    "semver": "^7.3.5"
+    "semver": "^7.3.5",
+    "vue-eslint-parser": "^9.0.3"
   },
   "peerDependencies": {
     "@babel/core": ">=7.11.0",
