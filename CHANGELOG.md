@@ -1,5 +1,17 @@
 
 
+## [1.8.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.7.1...v1.8.0) (2022-07-14)
+
+
+### Features
+
+* zero config ts integration ([f1aa65f](https://github.com/CyanSalt/eslint-config-preset/commit/f1aa65fe3483d052344aa7395660ce2b67196255))
+
+
+### Bug Fixes
+
+* add vue-eslint-parser as dep ([d059128](https://github.com/CyanSalt/eslint-config-preset/commit/d05912871d85005c59df2ac55e288e7f5ccd0fb7))
+
 ### [1.7.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.7.0...v1.7.1) (2022-06-23)
 
 
