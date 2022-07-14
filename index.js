@@ -8,18 +8,26 @@ const presets = [
   '@cyansalt/eslint-config/unicorn',
 ]
 
+let isUsingTS = false
+let isPartiallyUsingTS = false
+
 if (hasInstalledPackage('typescript')) {
+  isUsingTS = true
   const compilerOptions = getTSCompilerOptions()
-  // Enable partially only when declared as `false` explicitly
-  if (compilerOptions && compilerOptions.checkJs === false) {
-    presets.push('@cyansalt/eslint-config/typescript/partial')
-  } else {
+  if (compilerOptions && compilerOptions.checkJs) {
     presets.push('@cyansalt/eslint-config/typescript')
+  } else {
+    isPartiallyUsingTS = true
+    presets.push('@cyansalt/eslint-config/typescript/partial')
   }
 }
 
 if (hasBabelConfigFile()) {
-  presets.push('@cyansalt/eslint-config/babel')
+  if (isPartiallyUsingTS) {
+    presets.push('@cyansalt/eslint-config/babel')
+  } else if (!isUsingTS) {
+    presets.push('@cyansalt/eslint-config/babel')
+  }
 }
 
 if (hasInstalledPackage('react')) {

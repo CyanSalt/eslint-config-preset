@@ -7,7 +7,8 @@ function getTSCompilerOptions() {
   const tsConfigPath = path.join(path.dirname(nearestPackageJson), './tsconfig.json')
   try {
     const ts = require('typescript')
-    const { options } = ts.getParsedCommandLineOfConfigFile(tsConfigPath, {}, ts.sys)
+    const configFile = ts.readConfigFile(tsConfigPath, ts.sys.readFile)
+    const { options } = ts.parseJsonConfigFileContent(configFile.config, ts.sys, './')
     return options
   // eslint-disable-next-line unicorn/prefer-optional-catch-binding
   } catch (err) {
