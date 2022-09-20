@@ -1,5 +1,12 @@
 
 
+## [1.10.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.9.0...v1.10.0) (2022-09-20)
+
+
+### Features
+
+* update config and plugins ([09acb4a](https://github.com/CyanSalt/eslint-config-preset/commit/09acb4aa38b4a010f5ee8da589563278a66712ca))
+
 ## [1.9.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.8.0...v1.9.0) (2022-08-05)
 
 
