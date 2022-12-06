@@ -5,7 +5,11 @@ const presets = [
 ]
 
 if (hasInstalledPackage('vue')) {
-  presets.push('@cyansalt/eslint-config/galaxy/vue')
+  if (hasInstalledPackage('vue', '>=2.7')) {
+    presets.push('@cyansalt/eslint-config/galaxy/vue')
+  } else {
+    presets.push('@cyansalt/eslint-config/galaxy/vue/v2')
+  }
 }
 
 module.exports = {
