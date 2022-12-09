@@ -1,5 +1,12 @@
 
 
+### [1.11.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.11.0...v1.11.1) (2022-12-09)
+
+
+### Bug Fixes
+
+* config file outside workspaces ([41de01d](https://github.com/CyanSalt/eslint-config-preset/commit/41de01d8415eba7a937b43b98568b4a0ee48188f))
+
 ## [1.11.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.10.0...v1.11.0) (2022-12-06)
 
 
