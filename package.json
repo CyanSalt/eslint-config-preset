@@ -31,7 +31,7 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@babel/eslint-plugin": "^7.19.1",
-    "@cyansalt/eslint-config": "^3.17.0",
+    "@cyansalt/eslint-config": "^3.17.1",
     "@eslint/eslintrc": "^1.3.2",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
