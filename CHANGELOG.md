@@ -1,5 +1,12 @@
 
 
+### [1.12.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.12.0...v1.12.1) (2023-01-31)
+
+
+### Bug Fixes
+
+* import type order ([ddf6ca0](https://github.com/CyanSalt/eslint-config-preset/commit/ddf6ca035cbf309e22c00f19c716ddc43a11d72e))
+
 ## [1.12.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.11.1...v1.12.0) (2023-01-31)
 
 
