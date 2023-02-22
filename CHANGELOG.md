@@ -1,5 +1,12 @@
 
 
+### [1.12.2](https://github.com/CyanSalt/eslint-config-preset/compare/v1.12.1...v1.12.2) (2023-02-22)
+
+
+### Bug Fixes
+
+* optional macros global ([ede9d11](https://github.com/CyanSalt/eslint-config-preset/commit/ede9d11271b0899d2e55998a656c86b9283b0905))
+
 ### [1.12.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.12.0...v1.12.1) (2023-01-31)
 
 
