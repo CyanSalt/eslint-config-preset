@@ -10,9 +10,10 @@ if (hasInstalledPackage('vue', '>=3.x')) {
 } else {
   presets.unshift('@cyansalt/eslint-config/vue/v2')
   presets.push('@cyansalt/eslint-config/vue/scoped-css/v2')
-  if (hasInstalledPackage('vue', '>=2.7') || hasInstalledPackage('@vue/composition-api')) {
-    presets.push('@cyansalt/eslint-config/vue/ref-macros')
-  }
+}
+
+if (hasInstalledPackage('@vue-macros/reactivity-transform') || hasInstalledPackage('unplugin-vue-macros')) {
+  presets.push('@cyansalt/eslint-config/vue/macros-global')
 }
 
 let isUsingTS = false
