@@ -38,10 +38,6 @@ if (hasInstalledPackage('vue')) {
   presets.push(require.resolve('./vue.js'))
 }
 
-if (hasInstalledPackage('@vue/cli-service')) {
-  presets.push('@cyansalt/eslint-config/import/vue-cli')
-}
-
 presets.push(require.resolve('./galaxy.js'))
 
 module.exports = {
