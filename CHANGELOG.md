@@ -1,5 +1,12 @@
 
 
+### [1.12.3](https://github.com/CyanSalt/eslint-config-preset/compare/v1.12.2...v1.12.3) (2023-02-24)
+
+
+### Bug Fixes
+
+* update galaxy and vue config ([62ed145](https://github.com/CyanSalt/eslint-config-preset/commit/62ed14570e0242d2258aa337c59480d1a2a7da46))
+
 ### [1.12.2](https://github.com/CyanSalt/eslint-config-preset/compare/v1.12.1...v1.12.2) (2023-02-22)
 
 
