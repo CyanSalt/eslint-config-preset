@@ -12,6 +12,10 @@ if (hasInstalledPackage('vue')) {
   }
 }
 
+if (hasInstalledPackage('@vue-macros/reactivity-transform') || hasInstalledPackage('unplugin-vue-macros')) {
+  presets.push('@cyansalt/eslint-config/galaxy/vue/reactivity-transform')
+}
+
 module.exports = {
   extends: presets,
 }

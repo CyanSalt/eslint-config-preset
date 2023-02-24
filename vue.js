@@ -13,7 +13,7 @@ if (hasInstalledPackage('vue', '>=3.x')) {
 }
 
 if (hasInstalledPackage('@vue-macros/reactivity-transform') || hasInstalledPackage('unplugin-vue-macros')) {
-  presets.push('@cyansalt/eslint-config/vue/macros-global')
+  presets.push('@cyansalt/eslint-config/vue/reactivity-transform')
 }
 
 let isUsingTS = false
