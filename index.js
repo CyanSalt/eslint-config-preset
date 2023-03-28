@@ -24,7 +24,7 @@ if (hasInstalledPackage('typescript')) {
 
 if (hasBabelConfigFile()) {
   if (isPartiallyUsingTS) {
-    presets.push('@cyansalt/eslint-config/babel')
+    presets.push('@cyansalt/eslint-config/babel/partial')
   } else if (!isUsingTS) {
     presets.push('@cyansalt/eslint-config/babel')
   }
