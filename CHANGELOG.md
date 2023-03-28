@@ -1,5 +1,12 @@
 
 
+### [1.12.5](https://github.com/CyanSalt/eslint-config-preset/compare/v1.12.4...v1.12.5) (2023-03-28)
+
+
+### Bug Fixes
+
+* duplicate rules ([66f6ef9](https://github.com/CyanSalt/eslint-config-preset/commit/66f6ef948132721077cd8aef82cbffea5881985c))
+
 ### [1.12.4](https://github.com/CyanSalt/eslint-config-preset/compare/v1.12.3...v1.12.4) (2023-02-24)
 
 
