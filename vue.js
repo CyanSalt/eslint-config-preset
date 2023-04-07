@@ -22,11 +22,14 @@ let isPartiallyUsingTS = false
 if (hasInstalledPackage('typescript')) {
   isUsingTS = true
   const compilerOptions = getTSCompilerOptions()
-  if (compilerOptions && compilerOptions.checkJs) {
+  if (compilerOptions && compilerOptions.checkJs && !compilerOptions.jsx) {
     presets.push('@cyansalt/eslint-config/vue/typescript')
   } else {
     isPartiallyUsingTS = true
     presets.push('@cyansalt/eslint-config/vue/typescript/partial')
+    if (compilerOptions && compilerOptions.jsx) {
+      presets.push('@byted-star/eslint-config/vue/typescript/jsx')
+    }
   }
 }
 

@@ -11,10 +11,12 @@ const presets = [
 let isUsingTS = false
 let isPartiallyUsingTS = false
 
+const isUsingVue = hasInstalledPackage('vue')
+
 if (hasInstalledPackage('typescript')) {
   isUsingTS = true
   const compilerOptions = getTSCompilerOptions()
-  if (compilerOptions && compilerOptions.checkJs) {
+  if (compilerOptions && compilerOptions.checkJs && !(isUsingVue && compilerOptions.jsx)) {
     presets.push('@cyansalt/eslint-config/typescript')
   } else {
     isPartiallyUsingTS = true
@@ -34,7 +36,7 @@ if (hasInstalledPackage('react')) {
   presets.push(require.resolve('./react.js'))
 }
 
-if (hasInstalledPackage('vue')) {
+if (isUsingVue) {
   presets.push(require.resolve('./vue.js'))
 }
 
