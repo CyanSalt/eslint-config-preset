@@ -1,5 +1,13 @@
 
 
+### [1.12.6](https://github.com/CyanSalt/eslint-config-preset/compare/v1.12.5...v1.12.6) (2023-04-07)
+
+
+### Bug Fixes
+
+* resolve type exports ([9159ca6](https://github.com/CyanSalt/eslint-config-preset/commit/9159ca6bf611ea696e1d1201a0c0ff4063e33b04))
+* ts-eslint with vue jsx ([e34bc2e](https://github.com/CyanSalt/eslint-config-preset/commit/e34bc2e603434c7aa1c51b57e2602fdb56a7036f))
+
 ### [1.12.5](https://github.com/CyanSalt/eslint-config-preset/compare/v1.12.4...v1.12.5) (2023-03-28)
 
 
