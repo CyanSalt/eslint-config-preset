@@ -28,7 +28,7 @@ if (hasInstalledPackage('typescript')) {
     isPartiallyUsingTS = true
     presets.push('@cyansalt/eslint-config/vue/typescript/partial')
     if (compilerOptions && compilerOptions.jsx) {
-      presets.push('@byted-star/eslint-config/vue/typescript/jsx')
+      presets.push('@cyansalt/eslint-config/vue/typescript/jsx')
     }
   }
 }
