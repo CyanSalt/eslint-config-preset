@@ -1,7 +1,10 @@
-const path = require('path')
-const { getNearestPackageJson } = require('./utils')
+import { createRequire } from 'module'
+import * as path from 'path'
+import { getNearestPackageJson } from './utils.mjs'
 
-function getTSCompilerOptions() {
+const require = createRequire(import.meta.url)
+
+export function getTSCompilerOptions() {
   const nearestPackageJson = getNearestPackageJson()
   if (!nearestPackageJson) return undefined
   const tsConfigPath = path.join(path.dirname(nearestPackageJson), './tsconfig.json')
@@ -13,8 +16,4 @@ function getTSCompilerOptions() {
   } catch (err) {
     return undefined
   }
-}
-
-module.exports = {
-  getTSCompilerOptions,
 }

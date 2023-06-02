@@ -1,11 +1,20 @@
-const os = require('os')
-const path = require('path')
-const { Legacy } = require('@eslint/eslintrc')
-const findUp = require('find-up')
-const semver = require('semver')
+import { createRequire } from 'module'
+import * as os from 'os'
+import * as path from 'path'
+import findUp from 'find-up'
+import semver from 'semver'
+
+export { PATTERN_ALL } from '@cyansalt/eslint-config/flat/pattern.mjs'
+
+const require = createRequire(import.meta.url)
 
 function searchConfigFile(searchFrom) {
-  const configFile = Legacy.ConfigArrayFactory.getPathToConfigFileInDirectory(process.cwd())
+  const configFile = findUp.sync([
+    'eslint.config.js',
+    // Non-standard
+    'eslint.config.cjs',
+    'eslint.config.mjs',
+  ], { cwd: searchFrom })
   if (configFile) {
     return configFile
   }
@@ -20,7 +29,7 @@ function searchConfigFile(searchFrom) {
   return searchConfigFile(parentPath)
 }
 
-function getNearestPackageJson() {
+export function getNearestPackageJson() {
   const nearestConfigFile = searchConfigFile(process.cwd())
   if (!nearestConfigFile) return undefined
   return findUp.sync('package.json', { cwd: nearestConfigFile })
@@ -54,7 +63,7 @@ function getAllDependencies() {
   }
 }
 
-function getInstalledPackageVersion(moduleId) {
+export function getInstalledPackageVersion(moduleId) {
   const dependencies = getAllDependencies()
   const dependency = dependencies.find(dep => dep.name === moduleId)
   if (!dependency) {
@@ -69,7 +78,7 @@ function getInstalledPackageVersion(moduleId) {
   return packageJson.version
 }
 
-function hasInstalledPackage(moduleId, version) {
+export function hasInstalledPackage(moduleId, version) {
   const installedVersion = getInstalledPackageVersion(moduleId)
   if (!installedVersion) {
     return false
@@ -78,10 +87,4 @@ function hasInstalledPackage(moduleId, version) {
     return semver.satisfies(installedVersion, version)
   }
   return true
-}
-
-module.exports = {
-  getNearestPackageJson,
-  getInstalledPackageVersion,
-  hasInstalledPackage,
 }

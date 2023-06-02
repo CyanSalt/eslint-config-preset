@@ -23,6 +23,19 @@ module.exports {
 }
 ```
 
+Or for [Flat Config](https://eslint.org/blog/2022/08/new-config-system-part-1/):
+
+```javascript
+// eslint.config.js
+import presetConfig from '@cyansalt/eslint-config-preset/flat/index.mjs';
+
+export default {
+  // ...
+  ...presetConfig,
+  // ...
+};
+```
+
 The ruleset will check your project dependencies and enable available configurations automatically. This eliminates the need for you to know any specific ruleset configuration.
 
 Also see [@cyansalt/eslint-config](https://www.npmjs.com/package/@cyansalt/eslint-config).

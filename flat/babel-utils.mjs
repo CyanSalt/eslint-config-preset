@@ -1,4 +1,8 @@
-function hasBabelConfigFile() {
+import { createRequire } from 'module'
+
+const require = createRequire(import.meta.url)
+
+export function hasBabelConfigFile() {
   try {
     const babel = require('@babel/core')
     const config = babel.loadPartialConfig()
@@ -6,8 +10,4 @@ function hasBabelConfigFile() {
   } catch (err) {
     return false
   }
-}
-
-module.exports = {
-  hasBabelConfigFile,
 }
