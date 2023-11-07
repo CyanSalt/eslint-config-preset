@@ -1,5 +1,12 @@
 
 
+## [1.16.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.15.0...v1.16.0) (2023-11-07)
+
+
+### Features
+
+* use eslint-stylistic ([83d9915](https://github.com/CyanSalt/eslint-config-preset/commit/83d99153fcf787fbb6c2493136bc5580e2b59c24))
+
 ## [1.15.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.14.0...v1.15.0) (2023-08-24)
 
 
