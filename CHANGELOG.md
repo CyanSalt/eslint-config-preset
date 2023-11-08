@@ -1,5 +1,12 @@
 
 
+## [1.16.2](https://github.com/CyanSalt/eslint-config-preset/compare/v1.16.1...v1.16.2) (2023-11-08)
+
+
+### Bug Fixes
+
+* update plugins ([d134e41](https://github.com/CyanSalt/eslint-config-preset/commit/d134e41c875e914cb7c600c3d6dc66180833ee68))
+
 ### [1.16.1](https://github.com/CyanSalt/eslint-config-preset/compare/v1.16.0...v1.16.1) (2023-11-07)
 
 
