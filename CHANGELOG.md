@@ -1,5 +1,12 @@
 
 
+## [1.17.0](https://github.com/CyanSalt/eslint-config-preset/compare/v1.16.3...v1.17.0) (2023-11-14)
+
+
+### Features
+
+* expose createVueTsConfig ([c48726a](https://github.com/CyanSalt/eslint-config-preset/commit/c48726a60f6711c179897411dc393b4cac96c9b7))
+
 ## [1.16.3](https://github.com/CyanSalt/eslint-config-preset/compare/v1.16.2...v1.16.3) (2023-11-08)
 
 
