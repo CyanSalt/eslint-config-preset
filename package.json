@@ -25,8 +25,8 @@
   "author": "CyanSalt",
   "license": "ISC",
   "devDependencies": {
-    "@release-it/conventional-changelog": "^7.0.2",
-    "release-it": "^16.2.1"
+    "@release-it/conventional-changelog": "^8.0.1",
+    "release-it": "^17.0.0"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.22.15",
