@@ -1,5 +1,8 @@
 # @cyansalt/eslint-config-preset
 
+> [!WARNING]
+> This package has been deprecated. Use [@cyansalt/eslint-config](https://www.npmjs.com/package/@cyansalt/eslint-config) directly instead.
+
 [![npm](https://img.shields.io/npm/v/@cyansalt/eslint-config-preset.svg)](https://www.npmjs.com/package/@cyansalt/eslint-config-preset)
 
 My ESLint configuration preset.
